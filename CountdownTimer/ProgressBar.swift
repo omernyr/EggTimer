@@ -38,7 +38,6 @@ class ProgressBar: UIView, CAAnimationDelegate {
         loadFgProgressBar()
     }
     
-    
     fileprivate func loadFgProgressBar() {
         
         let startAngle = CGFloat(-Double.pi / 2)
@@ -59,14 +58,12 @@ class ProgressBar: UIView, CAAnimationDelegate {
         layer.addSublayer(gradientMaskLayer)
     }
     
-    
-    
     fileprivate func gradientMask() -> CAGradientLayer {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = bounds
         gradientLayer.locations = [0.0, 1.0]
-        let colorTop: AnyObject = CustomColor.lime.cgColor
-        let colorBottom: AnyObject = CustomColor.summerSky.cgColor
+        let colorTop: AnyObject = CustomColor.customOrange.cgColor
+        let colorBottom: AnyObject = CustomColor.customYellow.cgColor
         let arrayOfColors: [AnyObject] = [colorTop, colorBottom]
         gradientLayer.colors = arrayOfColors
         
