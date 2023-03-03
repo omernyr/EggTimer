@@ -19,23 +19,20 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bfc-YY-iUM">
-                                <rect key="frame" x="40" y="50" width="295" height="100"/>
+                                <rect key="frame" x="40" y="50" width="295" height="60.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ae9-fm-vuf">
-                                        <rect key="frame" x="0.0" y="0.0" width="91.5" height="100"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRk-YP-lNJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="91.5" height="60.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Button" image="lequid-egg">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
-                                        </state>
+                                        <state key="normal" title="" image="lequid-egg"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQM-ED-Vg7">
-                                        <rect key="frame" x="101.5" y="0.0" width="92" height="100"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMh-7u-jGk">
+                                        <rect key="frame" x="101.5" y="0.0" width="92" height="60.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Button" image="medium-egg"/>
+                                        <state key="normal" image="medium-egg"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMS-vP-c1B">
-                                        <rect key="frame" x="203.5" y="0.0" width="91.5" height="100"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2X-38-Jfe">
+                                        <rect key="frame" x="203.5" y="0.0" width="91.5" height="60.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="hard-egg"/>
                                     </button>
@@ -145,7 +142,7 @@
                         <constraints>
                             <constraint firstItem="P6s-69-ya1" firstAttribute="top" secondItem="ejV-6d-8Fg" secondAttribute="bottom" constant="30" id="6V0-iC-hIO"/>
                             <constraint firstItem="JD6-so-ztW" firstAttribute="centerY" secondItem="0xi-ev-gH2" secondAttribute="centerY" id="AFS-xs-nON"/>
-                            <constraint firstItem="MKx-9W-6cu" firstAttribute="top" secondItem="bfc-YY-iUM" secondAttribute="bottom" constant="33.5" id="KbF-xV-KZ9"/>
+                            <constraint firstItem="MKx-9W-6cu" firstAttribute="top" secondItem="bfc-YY-iUM" secondAttribute="bottom" constant="73" id="KbF-xV-KZ9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ejV-6d-8Fg" secondAttribute="trailing" id="PYB-bF-516"/>
                             <constraint firstItem="MKx-9W-6cu" firstAttribute="centerY" secondItem="0xi-ev-gH2" secondAttribute="centerY" id="QTi-9e-l3e"/>
                             <constraint firstItem="bfc-YY-iUM" firstAttribute="leading" secondItem="0xi-ev-gH2" secondAttribute="leadingMargin" constant="24" id="SKB-8q-dfS"/>
@@ -158,10 +155,13 @@
                     </view>
                     <connections>
                         <outlet property="counterView" destination="JD6-so-ztW" id="9zs-1H-bZW"/>
+                        <outlet property="hardButton" destination="s2X-38-Jfe" id="JJ4-IH-oRF"/>
                         <outlet property="hours" destination="R2N-Xh-BY5" id="dGU-w8-7MY"/>
+                        <outlet property="lequidButton" destination="kRk-YP-lNJ" id="jkC-um-dVO"/>
                         <outlet property="minutes" destination="EIi-6g-6P1" id="cTw-pZ-sHC"/>
                         <outlet property="progressBar" destination="MKx-9W-6cu" id="hK3-71-oNC"/>
                         <outlet property="seconds" destination="Z0j-b3-M7M" id="Xn5-Jf-Xg9"/>
+                        <outlet property="softButton" destination="FMh-7u-jGk" id="SRw-5f-h2w"/>
                         <outlet property="startBtn" destination="X3V-lG-KuK" id="L8V-rc-agT"/>
                         <outlet property="stopBtn" destination="I25-Vf-NfT" id="VJ3-Kn-TJg"/>
                     </connections>
@@ -172,8 +172,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="hard-egg" width="184" height="252"/>
-        <image name="lequid-egg" width="184" height="252"/>
-        <image name="medium-egg" width="184" height="252"/>
+        <image name="hard-egg" width="32" height="44"/>
+        <image name="lequid-egg" width="32" height="44"/>
+        <image name="medium-egg" width="32" height="44"/>
     </resources>
 </document>
