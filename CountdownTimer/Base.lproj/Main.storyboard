@@ -25,16 +25,25 @@
                                         <rect key="frame" x="0.0" y="0.0" width="91.5" height="60.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="" image="lequid-egg"/>
+                                        <connections>
+                                            <action selector="didTappedLequidButton:" destination="HrL-Be-TaV" eventType="touchUpInside" id="sja-9P-3zT"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMh-7u-jGk">
                                         <rect key="frame" x="101.5" y="0.0" width="92" height="60.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="medium-egg"/>
+                                        <connections>
+                                            <action selector="didTappedMediumButton:" destination="HrL-Be-TaV" eventType="touchUpInside" id="CyH-bi-KMS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2X-38-Jfe">
                                         <rect key="frame" x="203.5" y="0.0" width="91.5" height="60.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="hard-egg"/>
+                                        <connections>
+                                            <action selector="didTappedHardButton:" destination="HrL-Be-TaV" eventType="touchUpInside" id="XUe-bJ-IAH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -138,7 +147,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.098039215686274508" green="0.22745098039215686" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.49803921568627452" green="0.73333333333333328" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="P6s-69-ya1" firstAttribute="top" secondItem="ejV-6d-8Fg" secondAttribute="bottom" constant="30" id="6V0-iC-hIO"/>
                             <constraint firstItem="JD6-so-ztW" firstAttribute="centerY" secondItem="0xi-ev-gH2" secondAttribute="centerY" id="AFS-xs-nON"/>
