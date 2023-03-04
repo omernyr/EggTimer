@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/github/license/omernyr/Netflix-Clone">
 </p>
 
-  - ![eggtimerapp](https://user-images.githubusercontent.com/89137487/222892405-0a4bfbac-78cd-44dc-979e-2c3905e3c273.gif)
+  ![eggtimerapp](https://user-images.githubusercontent.com/89137487/222892405-0a4bfbac-78cd-44dc-979e-2c3905e3c273.gif)
 
 
 ## Key Features
