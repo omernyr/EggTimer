@@ -10,7 +10,7 @@ import UIKit
 import AudioToolbox
 
 class ViewController: UIViewController, CountdownTimerDelegate {
-
+    
     //MARK - Outlets
     
     @IBOutlet weak var progressBar: ProgressBar!
@@ -21,6 +21,9 @@ class ViewController: UIViewController, CountdownTimerDelegate {
     @IBOutlet weak var stopBtn: UIButton!
     @IBOutlet weak var startBtn: UIButton!
     
+    @IBOutlet weak var lequidButton: UIButton!
+    @IBOutlet weak var softButton: UIButton!
+    @IBOutlet weak var hardButton: UIButton!
     
     
     //MARK - Vars
@@ -32,18 +35,18 @@ class ViewController: UIViewController, CountdownTimerDelegate {
         return countdownTimer
     }()
     
+    let myTime: Int = 0
     
     // Test, for dev
-    let selectedSecs:Int = 30
-    
+    var selectedSecs: Int = 5
     
     lazy var messageLabel: UILabel = {
         let label = UILabel(frame:CGRect.zero)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 24.0, weight: UIFont.Weight.light)
-        label.textColor = UIColor.systemGray
+        label.textColor = UIColor.white
         label.textAlignment = .center
-        label.text = "Done!"
+        label.text = "Egg is Ready!"
         
         return label
     }()
@@ -51,13 +54,16 @@ class ViewController: UIViewController, CountdownTimerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureEggImages()
+        configureButton()
         countdownTimer.delegate = self
+        
+        
         countdownTimer.setTimer(hours: 0, minutes: 0, seconds: selectedSecs)
         progressBar.setProgressBar(hours: 0, minutes: 0, seconds: selectedSecs)
+        
         stopBtn.isEnabled = false
         stopBtn.alpha = 0.5
-
+        
         view.addSubview(messageLabel)
         
         var constraintCenter = NSLayoutConstraint(item: messageLabel, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1, constant: 0)
@@ -67,6 +73,12 @@ class ViewController: UIViewController, CountdownTimerDelegate {
         
         messageLabel.isHidden = true
         counterView.isHidden = false
+    }
+    
+    func configureButton() {
+        self.lequidButton.layer.cornerRadius = 15
+        self.softButton.layer.cornerRadius = 15
+        self.hardButton.layer.cornerRadius = 15
     }
     
     override var preferredStatusBarStyle : UIStatusBarStyle {
@@ -100,11 +112,7 @@ class ViewController: UIViewController, CountdownTimerDelegate {
     
     
     //MARK: - Actions
-    
-    func configureEggImages() {
 
-    }
-    
     @IBAction func startTimer(_ sender: UIButton) {
         
         messageLabel.isHidden = true
@@ -119,14 +127,13 @@ class ViewController: UIViewController, CountdownTimerDelegate {
             countdownTimerDidStart = true
             startBtn.setTitle("PAUSE",for: .normal)
             
-        }else{
+        } else{
             countdownTimer.pause()
             progressBar.pause()
             countdownTimerDidStart = false
             startBtn.setTitle("RESUME",for: .normal)
         }
     }
-    
     
     @IBAction func stopTimer(_ sender: UIButton) {
         countdownTimer.stop()
@@ -137,9 +144,22 @@ class ViewController: UIViewController, CountdownTimerDelegate {
         startBtn.setTitle("START",for: .normal)
     }
     
+    @IBAction func didTappedLequidButton(_ sender: Any) {
+        self.softButton.backgroundColor = .clear
+        self.lequidButton.backgroundColor = CustomColor.customBlue
+        self.hardButton.backgroundColor = .clear
+    }
     
+    @IBAction func didTappedMediumButton(_ sender: Any) {
+        self.lequidButton.backgroundColor = .clear
+        self.softButton.backgroundColor = CustomColor.customBlue
+        self.hardButton.backgroundColor = .clear
+    }
     
-
-
+    @IBAction func didTappedHardButton(_ sender: Any) {
+        self.lequidButton.backgroundColor = .clear
+        self.softButton.backgroundColor = .clear
+        self.hardButton.backgroundColor = CustomColor.customBlue
+    }
 }
 
