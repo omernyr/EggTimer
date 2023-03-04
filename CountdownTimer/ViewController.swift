@@ -58,8 +58,7 @@ class ViewController: UIViewController, CountdownTimerDelegate {
         countdownTimer.delegate = self
         
         
-        countdownTimer.setTimer(hours: 0, minutes: 0, seconds: selectedSecs)
-        progressBar.setProgressBar(hours: 0, minutes: 0, seconds: selectedSecs)
+        
         
         stopBtn.isEnabled = false
         stopBtn.alpha = 0.5
@@ -145,21 +144,33 @@ class ViewController: UIViewController, CountdownTimerDelegate {
     }
     
     @IBAction func didTappedLequidButton(_ sender: Any) {
+        
+        countdownTimer.setTimer(hours: 0, minutes: 0, seconds: 3)
+        progressBar.setProgressBar(hours: 0, minutes: 0, seconds: 3)
+        
         self.softButton.backgroundColor = .clear
-        self.lequidButton.backgroundColor = CustomColor.customBlue
+        self.lequidButton.backgroundColor = CustomColor.customSelectedButtonColor
         self.hardButton.backgroundColor = .clear
     }
     
     @IBAction func didTappedMediumButton(_ sender: Any) {
+        
+        countdownTimer.setTimer(hours: 0, minutes: 0, seconds: 5)
+        progressBar.setProgressBar(hours: 0, minutes: 0, seconds: 5)
+        
         self.lequidButton.backgroundColor = .clear
-        self.softButton.backgroundColor = CustomColor.customBlue
+        self.softButton.backgroundColor = CustomColor.customSelectedButtonColor
         self.hardButton.backgroundColor = .clear
     }
     
     @IBAction func didTappedHardButton(_ sender: Any) {
+        
+        countdownTimer.setTimer(hours: 0, minutes: 0, seconds: 10)
+        progressBar.setProgressBar(hours: 0, minutes: 0, seconds: 10)
+        
         self.lequidButton.backgroundColor = .clear
         self.softButton.backgroundColor = .clear
-        self.hardButton.backgroundColor = CustomColor.customBlue
+        self.hardButton.backgroundColor = CustomColor.customSelectedButtonColor
     }
 }
 
