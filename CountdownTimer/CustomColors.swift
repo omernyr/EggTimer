@@ -27,5 +27,11 @@ struct CustomColor {
     static let customOrange = UIColor(red:0.96, green:0.41, blue:0.24, alpha:1.0)
     static let customYellow = UIColor(red:0.84, green:0.63, blue:0.27, alpha:1.0)
     static let customBlue = UIColor(red:0.06, green:0.23, blue:0.31, alpha:1.0)
+    
+    static let customSelectedButtonColor = UIColor(red:0.47, green:0.6, blue:0.58, alpha:1.0)
+    
+
+    
+
 
 }
