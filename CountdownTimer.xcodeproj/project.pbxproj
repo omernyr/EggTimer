@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5204F38029B2419300C06CE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C7B6FA1EA8DB9F008B31A6 /* ViewController.swift */; };
 		B66EF1D91EA9E6E300649824 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66EF1D81EA9E6E300649824 /* CustomColors.swift */; };
 		B66EF1DC1EA9E75C00649824 /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66EF1DB1EA9E75C00649824 /* CountdownTimer.swift */; };
 		B66EF1DE1EA9E76500649824 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66EF1DD1EA9E76500649824 /* ProgressBar.swift */; };
 		B6C7B6F91EA8DB9F008B31A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C7B6F81EA8DB9F008B31A6 /* AppDelegate.swift */; };
-		B6C7B6FB1EA8DB9F008B31A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C7B6FA1EA8DB9F008B31A6 /* ViewController.swift */; };
 		B6C7B6FE1EA8DB9F008B31A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C7B6FC1EA8DB9F008B31A6 /* Main.storyboard */; };
 		B6C7B7001EA8DB9F008B31A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C7B6FF1EA8DB9F008B31A6 /* Assets.xcassets */; };
 		B6C7B7031EA8DB9F008B31A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C7B7011EA8DB9F008B31A6 /* LaunchScreen.storyboard */; };
@@ -195,7 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6C7B6FB1EA8DB9F008B31A6 /* ViewController.swift in Sources */,
+				5204F38029B2419300C06CE7 /* ViewController.swift in Sources */,
 				B66EF1DC1EA9E75C00649824 /* CountdownTimer.swift in Sources */,
 				B66EF1DE1EA9E76500649824 /* ProgressBar.swift in Sources */,
 				B66EF1D91EA9E6E300649824 /* CustomColors.swift in Sources */,

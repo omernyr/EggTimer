@@ -24,6 +24,8 @@ struct CustomColor {
     static let lime = UIColor(red:0.00, green:1.00, blue:0.00, alpha:1.0)
     static let lemon = UIColor(red:1.00, green:1.00, blue:0.00, alpha:1.0)
     static let summerSky = UIColor(red:0.00, green:0.68, blue:1.00, alpha:1.0)
-    static let customOrange = UIColor(red:0.85, green:0.36, blue:0.2, alpha:1.0)
+    static let customOrange = UIColor(red:0.96, green:0.41, blue:0.24, alpha:1.0)
     static let customYellow = UIColor(red:0.84, green:0.63, blue:0.27, alpha:1.0)
+    static let customBlue = UIColor(red:0.06, green:0.23, blue:0.31, alpha:1.0)
+
 }
