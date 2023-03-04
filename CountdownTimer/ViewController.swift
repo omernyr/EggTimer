@@ -54,15 +54,15 @@ class ViewController: UIViewController, CountdownTimerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureButton()
+        
         countdownTimer.delegate = self
-        
-        
-        
-        
         stopBtn.isEnabled = false
         stopBtn.alpha = 0.5
         
+        startBtn.isEnabled = false
+        startBtn.alpha = 0.5
+        
+        configureButton()
         view.addSubview(messageLabel)
         
         var constraintCenter = NSLayoutConstraint(item: messageLabel, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1, constant: 0)
@@ -72,6 +72,7 @@ class ViewController: UIViewController, CountdownTimerDelegate {
         
         messageLabel.isHidden = true
         counterView.isHidden = false
+        
     }
     
     func configureButton() {
@@ -80,6 +81,8 @@ class ViewController: UIViewController, CountdownTimerDelegate {
         self.hardButton.layer.cornerRadius = 15
     }
     
+
+            
     override var preferredStatusBarStyle : UIStatusBarStyle {
         return .lightContent
     }
@@ -151,6 +154,9 @@ class ViewController: UIViewController, CountdownTimerDelegate {
         self.softButton.backgroundColor = .clear
         self.lequidButton.backgroundColor = CustomColor.customSelectedButtonColor
         self.hardButton.backgroundColor = .clear
+        
+        startBtn.isEnabled = true
+        startBtn.alpha = 1
     }
     
     @IBAction func didTappedMediumButton(_ sender: Any) {
@@ -161,6 +167,9 @@ class ViewController: UIViewController, CountdownTimerDelegate {
         self.lequidButton.backgroundColor = .clear
         self.softButton.backgroundColor = CustomColor.customSelectedButtonColor
         self.hardButton.backgroundColor = .clear
+        
+        startBtn.isEnabled = true
+        startBtn.alpha = 1
     }
     
     @IBAction func didTappedHardButton(_ sender: Any) {
@@ -171,6 +180,9 @@ class ViewController: UIViewController, CountdownTimerDelegate {
         self.lequidButton.backgroundColor = .clear
         self.softButton.backgroundColor = .clear
         self.hardButton.backgroundColor = CustomColor.customSelectedButtonColor
+        
+        startBtn.isEnabled = true
+        startBtn.alpha = 1
     }
 }
 
