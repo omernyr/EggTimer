@@ -24,7 +24,8 @@
   - iOS, macOS ready.
 
 ## Screenshots
-- <img width="163" alt="1" src="https://user-images.githubusercontent.com/89137487/222893632-d8444237-0a8b-42c6-8e45-6af2f0ff685e.png"> - <img width="163" alt="1" src="https://user-images.githubusercontent.com/89137487/222893635-4e9dbd27-2c95-4214-bf1d-5ed1802e65e3.png"> - <img width="163" alt="1" src="https://user-images.githubusercontent.com/89137487/222893636-23f5df9e-e864-4fb3-a271-d4ec05adbae9.png"> - <img width="163" alt="1" src="https://user-images.githubusercontent.com/89137487/222893640-36ad3367-aabd-4b9c-9b72-d3c6dd4bcb5d.png"> 
+
+<img width="163" alt="1" src="https://user-images.githubusercontent.com/89137487/222893632-d8444237-0a8b-42c6-8e45-6af2f0ff685e.png"> <img width="163" alt="1" src="https://user-images.githubusercontent.com/89137487/222893635-4e9dbd27-2c95-4214-bf1d-5ed1802e65e3.png"> <img width="163" alt="1" src="https://user-images.githubusercontent.com/89137487/222893636-23f5df9e-e864-4fb3-a271-d4ec05adbae9.png"> <img width="163" alt="1" src="https://user-images.githubusercontent.com/89137487/222893640-36ad3367-aabd-4b9c-9b72-d3c6dd4bcb5d.png"> 
 
  
 ## Installation
